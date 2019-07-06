@@ -13,9 +13,9 @@ class Member(Document):
 		load_address_and_contact(self)
 
 
-	def validate(self):
-		self.validate_email_type(self.email)
+	#def validate(self):
+	#	self.validate_email_type(self.email)
 
-	def validate_email_type(self, email):
-		from frappe.utils import validate_email_address
-		validate_email_address(email.strip(), True)
+	#def validate_email_type(self, email):
+	#	from frappe.utils import validate_email_address
+	#	validate_email_address(email.strip(), True)
